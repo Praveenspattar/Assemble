@@ -52,7 +52,7 @@
                 android:layout_weight="1"
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="20dp"
-                android:text="NEXT" />
+                android:text="START" />
 
         </LinearLayout>
 

@@ -9,11 +9,12 @@
     tools:context=".AddImage">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,64 +26,82 @@
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img1"/>
 
             <ImageView
                 android:id="@+id/imagePart2"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img2"/>
 
             <ImageView
                 android:id="@+id/imagePart3"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img3"/>
 
             <ImageView
                 android:id="@+id/imagePart4"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img4"/>
 
             <ImageView
                 android:id="@+id/imagePart5"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img5"/>
 
             <ImageView
                 android:id="@+id/imagePart6"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img6"/>
 
             <ImageView
                 android:id="@+id/imagePart7"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img7"/>
 
             <ImageView
                 android:id="@+id/imagePart8"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img8"/>
 
             <ImageView
                 android:id="@+id/imagePart9"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_weight="1"
-                android:paddingHorizontal="4dp"/>
+                android:paddingHorizontal="4dp"
+                android:src="@drawable/img9"/>
         </LinearLayout>
+
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
