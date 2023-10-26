@@ -3,6 +3,7 @@ package com.myapps.assemble;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -10,8 +11,9 @@ public class AddImage extends AppCompatActivity {
 
     ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
     ImageView[] imageViews = new ImageView[]{};
-    /*boolean[] isImageVisible = getIntent().getBooleanArrayExtra("imageVisibility");*/
 
+    private ImageView selectedImage;
+    private int offsetX, offsetY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,41 @@ public class AddImage extends AppCompatActivity {
                 imageViews[i].setVisibility(View.GONE);
             }
         }
+
+        View.OnTouchListener onTouchListener = new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        selectedImage = (ImageView) view;
+                        offsetX = (int) event.getX();
+                        offsetY = (int) event.getY();
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        if (selectedImage != null) {
+                            int x = (int) event.getRawX();
+                            int y = (int) event.getRawY();
+                            selectedImage.setX(x - offsetX);
+                            selectedImage.setY(y - offsetY);
+                        }
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        selectedImage = null;
+                        break;
+                }
+                return true;
+            }
+        };
+
+        img1.setOnTouchListener(onTouchListener);
+        img2.setOnTouchListener(onTouchListener);
+        img3.setOnTouchListener(onTouchListener);
+        img4.setOnTouchListener(onTouchListener);
+        img5.setOnTouchListener(onTouchListener);
+        img6.setOnTouchListener(onTouchListener);
+        img7.setOnTouchListener(onTouchListener);
+        img8.setOnTouchListener(onTouchListener);
+        img9.setOnTouchListener(onTouchListener);
+
     }
 }
