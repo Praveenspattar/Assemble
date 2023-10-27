@@ -4,104 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     android:padding="10dp"
+    android:background="@color/white"
     tools:context=".Choose_Color">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="450dp"
-        android:layout_height="300dp"
-        android:background="@drawable/drop_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="173.3dp"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
 
 
         <ImageView
             android:id="@+id/completeImage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
 
-
-
-    <!--<ImageView
-        android:id="@+id/completeImage"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="32dp"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/color1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
-            <ImageView
-                android:id="@+id/color1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/color2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
-            <ImageView
-                android:id="@+id/color2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/color3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
-            <ImageView
-                android:id="@+id/color3"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:id="@+id/color4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/color5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp">
-
-            <ImageView
-                android:id="@+id/color4"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
-
-            <ImageView
-                android:id="@+id/color5"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
-
-            <ImageView
-                android:id="@+id/color6"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
-
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/color6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/btn_background"
+        android:text="FINISH"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,79 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AddImage">
 
     <RelativeLayout
         android:id="@+id/RLayout"
-        android:layout_width="680dp"
-        android:layout_height="280dp"
+        android:layout_width="650dp"
+        android:layout_height="250dp"
         android:background="@drawable/drop_bg"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_marginLeft="10dp"
             android:id="@+id/imagePart1"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img1"/>
+            android:layout_marginStart="10dp"
+            android:src="@drawable/img1" />
 
         <ImageView
             android:id="@+id/imagePart2"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img2"
-            android:layout_toRightOf="@+id/imagePart1"/>
+            android:layout_toRightOf="@+id/imagePart1"
+            android:src="@drawable/img2" />
 
         <ImageView
             android:id="@+id/imagePart3"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img3"
-            android:layout_toRightOf="@+id/imagePart2"/>
+            android:layout_toRightOf="@+id/imagePart2"
+            android:src="@drawable/img3" />
 
         <ImageView
             android:id="@+id/imagePart4"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img4"
-            android:layout_toRightOf="@+id/imagePart3"/>
+            android:layout_toRightOf="@+id/imagePart3"
+            android:src="@drawable/img4" />
 
         <ImageView
             android:id="@+id/imagePart5"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img5"
-            android:layout_toRightOf="@+id/imagePart4"/>
+            android:layout_toRightOf="@+id/imagePart4"
+            android:src="@drawable/img5" />
 
         <ImageView
             android:id="@+id/imagePart6"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img6"
-            android:layout_toRightOf="@+id/imagePart5"/>
+            android:layout_toRightOf="@+id/imagePart5"
+            android:src="@drawable/img6" />
 
         <ImageView
             android:id="@+id/imagePart7"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img7"
-            android:layout_toRightOf="@+id/imagePart6"/>
+            android:layout_toRightOf="@+id/imagePart6"
+            android:src="@drawable/img7" />
 
         <ImageView
             android:id="@+id/imagePart8"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img8"
-            android:layout_toRightOf="@+id/imagePart7"/>
+            android:layout_toRightOf="@+id/imagePart7"
+            android:src="@drawable/img8" />
 
         <ImageView
             android:id="@+id/imagePart9"
             android:layout_width="70dp"
             android:layout_height="80dp"
-            android:src="@drawable/img9"
-            android:layout_toRightOf="@+id/imagePart8"/>
+            android:layout_toRightOf="@+id/imagePart8"
+            android:src="@drawable/img9" />
 
     </RelativeLayout>
 
@@ -84,7 +86,11 @@
         android:id="@+id/nxtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/btn_background"
         android:text="NEXT"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

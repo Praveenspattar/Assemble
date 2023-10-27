@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/white"
     android:padding="10dp"
     tools:context=".MainActivity">
 
@@ -33,25 +33,33 @@
 
             <TextView
                 android:id="@+id/textView"
+                android:background="@drawable/drop_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
                 android:layout_weight="1"
                 android:layout_marginTop="18dp"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
+                android:elevation="5dp"
                 android:text="Mercedes-Benz cars are renowned for their luxury, performance, and cutting-edge technology. They offer a perfect blend of style, power, and comfort, making them an icon of automotive excellence." />
 
             <Button
                 android:id="@+id/button"
                 android:background="@drawable/btn_background"
                 android:onClick="toScreen2"
+                android:fontFamily="@font/poppins_semibold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
                 android:text="START" />
 
         </LinearLayout>
