@@ -8,14 +8,15 @@
 
     <RelativeLayout
         android:id="@+id/RLayout"
-        android:layout_width="match_parent"
-        android:layout_height="310dp"
+        android:layout_width="680dp"
+        android:layout_height="280dp"
         android:background="@drawable/drop_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:layout_marginLeft="10dp"
             android:id="@+id/imagePart1"
             android:layout_width="70dp"
             android:layout_height="80dp"
@@ -80,6 +81,7 @@
     </RelativeLayout>
 
     <Button
+        android:id="@+id/nxtButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NEXT"
