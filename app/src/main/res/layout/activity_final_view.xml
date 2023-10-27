@@ -11,12 +11,25 @@
     <ImageView
         android:id="@+id/finalImage"
         android:layout_width="450dp"
-        android:layout_height="350dp"
+        android:layout_height="230dp"
         android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalImage"
+        android:text="As I have the complete image aligned, I cannot change the color of particular parts.\n Thank you for giving me the task"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
