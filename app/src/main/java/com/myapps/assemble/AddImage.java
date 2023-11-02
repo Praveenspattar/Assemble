@@ -90,8 +90,6 @@ public class AddImage extends AppCompatActivity {
                         break;
                 }
 
-                // Add the position to the list
-                /*imagePositions.add(new Pair<>(selectedImage.getX(), selectedImage.getY()));*/
 
                 return true;
             }
@@ -117,7 +115,7 @@ public class AddImage extends AppCompatActivity {
                 saveBitmapToDownloads(getApplicationContext(),bitmap,"my_image");
                 String filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/my_image.png";
                 intent.putExtra("imagePath", filePath);
-                //intent.putExtra("imagePositions", new ArrayList<>(imagePositions));
+
                 startActivity(intent);
             }
         });
